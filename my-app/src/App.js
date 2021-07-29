@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Home, Auth } from './pages';
+import { Home, Auth, TOP, SignupPage } from './pages';
 import HeaderContainer from './containers/Base/HeaderContainer';
 
 class App extends Component {
@@ -10,6 +10,8 @@ class App extends Component {
                 <HeaderContainer/>
                 <Route exact path="/" component={Home}/>
                 <Route path="/auth" component={Auth}/>
+                <Route path="/top" component={TOP}/>
+                <Route path="/Signup" component={SignupPage}/>
             </div>
         );
     }
